@@ -1,4 +1,31 @@
+# 👻 Ghost Net
 
+**Ghost Net** is a real-time private messaging platform built with **Django**, **Django Channels**, **WebSocket**, and **JWT Authentication**. This project is currently under active development and aims to be a fast, secure, and scalable communication system for users who value privacy and performance.
+
+## 🚀 Features
+
+- 🔒 Secure private chat between users
+- 💬 Real-time messaging with WebSockets
+- 🧪 JWT-based authentication (no session handling)
+- 📁 RESTful APIs built with Django REST Framework
+- 🏗 Modular, scalable backend architecture
+- 🛡 Custom user model for flexibility
+
+## 🔧 Tech Stack
+
+- Backend: Django + Django Channels
+- Real-Time: WebSocket, Redis
+- Auth: JWT (djangorestframework-simplejwt)
+- Database: PostgreSQL / SQLite (dev)
+- Frontend: Not implemented yet (API ready)
+- Deployment: Docker (WIP)
+
+## 📂 Project Structure
+ghost_net/
+├── accounts/ # User models and authentication
+├── link/ # Chat logic and WebSocket consumers
+├── core/ # Project configuration
+├── media/ # Uploaded files (if any)
 ## 📡 Realtime Chat with WebSocket
 
 Using Django Channels and Redis, each user can establish a WebSocket connection to communicate in real-time. The system uses `AsyncWebsocketConsumer` to handle message broadcasting and saving them to the database.
@@ -15,14 +42,6 @@ Ghost Net is currently in the **development phase**. We're actively building fea
 - Read receipts
 - Typing indicators
 - File sharing in chat
-
-## 🤝 Contribution
-
-Wanna contribute or collaborate? We’d love to hear from you. Feel free to open an issue or reach out.
-
-## 📜 License
-
-MIT License.
 
 ---
 
