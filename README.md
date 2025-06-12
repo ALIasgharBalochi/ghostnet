@@ -21,11 +21,11 @@
 - Deployment: Docker (WIP)
 
 ## 📂 Project Structure
-ghost_net/
-├── accounts/ # User models and authentication
-├── link/ # Chat logic and WebSocket consumers
-├── core/ # Project configuration
-├── media/ # Uploaded files (if any)
+ghost_net/<br>
+├── accounts/ # User models and authentication<br>
+├── link/ # Chat logic and WebSocket consumers<br>
+├── core/ # Project configuration<br>
+├── media/ # Uploaded files (if any)<br>
 ## 📡 Realtime Chat with WebSocket
 
 Using Django Channels and Redis, each user can establish a WebSocket connection to communicate in real-time. The system uses `AsyncWebsocketConsumer` to handle message broadcasting and saving them to the database.
